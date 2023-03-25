@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact form with Firebase</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <h2>Contact</h2>
+        </div>
+        <div class="form">
+           <form method="POST" id="myForm" onsubmit="return validateForm()">
+               <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+               <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+               <input type="tel" maxlength="10" minlength="10" name="phone" id="phone" placeholder="Enter your mobile number" required>
+               <textarea id="message" name="message" placeholder="Write your message...?" required></textarea>
+               <input type="submit" id="submit" name="submit" value="Send Message">
+           </form>
+        </div>
+    </div>
+    
+  <script src="src/index.js"></script>
+</body>
+</html>

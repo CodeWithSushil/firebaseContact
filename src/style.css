@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background-color: #F9F9F9;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10), 2px 2px 10px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 1rem;
+}
+
+.wrapper .heading {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+.heading h2{
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.form {
+    width: 100%;
+    padding: 4rem;
+    margin: 0rem;
+}
+
+.wrapper .form form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form form input {
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    font-size: 17px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.4s linear;
+}
+
+#message {
+    width: 100%;
+    height: 10rem;
+    font-size: 17px;
+    padding: 1rem;
+    margin: .5rem;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.4s linear;
+}
+
+#submit {
+    color: #fff;
+    background: #000000;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.2s linear!important;
+}
+
+#submit:hover{
+    color: #000;
+    background: #FEFEFE;
+    border: 1px solid black;
+}
+
+#message::placeholder{
+    color: #000000;
+}
+
+#message:focus::placeholder{
+   color: #FFFFFF; 
+}
+
+input::placeholder{
+    color: #000000;
+}
+
+input:focus::placeholder{
+    color: #ffffff;
+}
+
+input:focus{
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+}
+
+#message:focus{
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+    outline: 1px solid #fff;
+}
+
+.form form input:hover{
+    border: 1px solid #fff;
+    outline: 1px solid #fff;
+}
